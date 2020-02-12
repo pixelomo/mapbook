@@ -6,6 +6,8 @@ import Marker from '../components/Marker';
 import GoogleMap from '../components/GoogleMap';
 import AutoComplete from '../components/AutoComplete';
 
+const API_KEY =`${process.env.REACT_APP_API_KEY}`
+
 class Panel extends React.Component {
   constructor(props) {
     super(props);
@@ -200,7 +202,7 @@ class Panel extends React.Component {
               defaultZoom={11}
               defaultCenter={[34.0325, -118.4030]}
               bootstrapURLKeys={{
-                key: "AIzaSyCzPYGaaTEF0vVTd4r3TK5O0kY9Oy1fAKE",
+                key: API_KEY,
                 libraries: ['places', 'geometry'],
               }}
               yesIWantToUseGoogleMapApiInternals

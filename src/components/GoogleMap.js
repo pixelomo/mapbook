@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import GoogleMapReact from 'google-map-react';
 
+const API_KEY =`${process.env.REACT_APP_API_KEY}`
+
 const GoogleMap = ({ children, ...props }) => (
   <Wrapper>
     <GoogleMapReact
       bootstrapURLKeys={{
-        key: "AIzaSyCzPYGaaTEF0vVTd4r3TK5O0kY9Oy1fAKE",
+        key: API_KEY,
       }}
       {...props}
     >
