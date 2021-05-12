@@ -37,7 +37,7 @@
     "firebase": "^7.8.1",
     "google-map-react": "^1.1.6",
     "lodash.isempty": "^4.4.0",
-    "merge": "1.2.1",
+    "merge": "2.1.1",
     "object-assign": "4.1.1",
     "react": "16.4.2",
     "react-dom": "16.4.2",
